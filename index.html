@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./assets/header/Logo.ico">
     <title>Alurabooks</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -34,9 +35,39 @@
                 </li>
             </ul>
             <img src="./assets/header/Logo.svg" alt="Logo Alurabooks" class="container__imagem">
+            <h1 class="container__titulo"><b class="container__titulo__negrito">Alura</b>Books</h1>
         </div>
+
+        <ul class="opcoes">
+            <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+            <label for="opcoes__menu">
+                <li class="opcoes__lista">Categorias</li>
+            </label>
+
+            <ul class="lista-menu">
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Programção</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Desing & UX</a>
+                </li>
+            </ul>
+
+            <li class="opcoes__lista"><a class="opcoes__link" href="#">Favoritos</a></li>
+            <li class="opcoes__lista"><a class="opcoes__link" href="#">Minha estante</a></li>
+        </ul>
+
         <div class="container">
-            <a href="#"><img src="./assets/header/Favoritos.svg" alt="Meus Favoritos" class="container__imagem"></a>
+            <a href="#"><img src="./assets/header/Favoritos.svg" alt="Meus Favoritos" class="container__imagem container__imagem-transparente"></a>
             <a href="#"><img src="./assets/header/Sacola.svg" alt="Carrinho de Compras" class="container__imagem"></a>
             <a href="#"><img src="./assets/header/Usuario.svg" alt="Meu Perfil" class="container__imagem"></a>
         </div>
@@ -44,7 +75,7 @@
     <section class="banner">
         <h2 class="banner__titulo">Já sabe por onde começar?</h2>
         <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento!</p>
-        <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+        <input type="search" id="banner" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
     </section>
     <section class="carrossel">
         <h2 class="carrossel__titulo">Ultimos Lançamentos</h2>
@@ -143,12 +174,15 @@
         </ul>
     </section>
     <section class="contato">
-        <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-        <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-        <input type="email" class="contato__email" placeholder="Cadastre seu email">
+        <div class="contato__descicao">
+            <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+            <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
+        </div>
+        <input type="email" id="email" class="contato__email" placeholder="Cadastre seu email">
     </section>
-    <footer>
-
+    <hr />
+    <footer class="rodape">
+        <h2 class="rodape__titulo">Grupo Alura</h2>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
