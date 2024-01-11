@@ -54,15 +54,7 @@
     text-transform: uppercase   ;
 }
 
-.container__botao{
-    display: none;
-}
-
-.container__titulo{
-    display: none;
-}
-
-.opcoes{
+.container__botao,.container__titulo, .opcoes, .container__texto{
     display: none;
 }
 
@@ -109,5 +101,29 @@
 
     .opcoes__botao{
         display: none;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+    .container__link{
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        margin-left: 1em;
+    }
+    
+    .container__texto{
+        display: block;
+        font-size: 20px;
+        margin-right: 2em;
+        color: var(--cor-preto);
+    }
+
+    .cabecalho{
+        padding: 1em 2em;
+    }
+
+    .opcoes{
+        margin-right: auto;
     }
 }
